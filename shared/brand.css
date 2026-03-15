@@ -454,6 +454,7 @@ section {
 }
 
 @media (max-width: 768px) {
+  .nav { --nav-height: 64px; }
   .nav__toggle { display: block; }
 
   /* When menu is open, expand nav to full screen */
