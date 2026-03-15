@@ -855,12 +855,12 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
+    min-height: 115vh;
     padding-top: calc(var(--nav-height) + var(--space-xl));
   }
 
   .hero__bg-img {
-    object-position: 45% 35%;
+    object-position: 48% 40%;
   }
 
   .hero__title {
