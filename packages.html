@@ -17,6 +17,14 @@
 
   <link rel="stylesheet" href="shared/brand.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    @media (max-width: 1024px) {
+      .packages-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+    @media (max-width: 640px) {
+      .packages-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -55,7 +63,7 @@
   <!-- Packages -->
   <section>
     <div class="container">
-      <div class="grid grid--4 stagger">
+      <div class="grid packages-grid stagger" style="grid-template-columns:repeat(5,1fr)">
 
         <!-- Digital -->
         <div class="card text-center">
@@ -160,6 +168,17 @@
           </div>
         </div>
 
+        <!-- Custom -->
+        <div class="card text-center" style="border:2px dashed var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <h5 style="color:var(--text-muted);text-transform:uppercase;letter-spacing:0.15em;font-family:var(--font-body);font-size:var(--text-xs);margin-bottom:var(--space-sm)">Custom</h5>
+          <div style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:700;color:var(--gold)">Special</div>
+          <p style="font-size:var(--text-xs);color:var(--text-muted);margin-bottom:var(--space-xl)">&nbsp;</p>
+
+          <p style="font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:var(--space-xl);flex:1">Need something unique? We'll build a custom package tailored to your event — whether it's a multi-day activation, a branded corporate experience, or something completely one-of-a-kind.</p>
+
+          <a href="book.html" class="btn btn--gold" style="width:100%">Contact Us</a>
+        </div>
+
       </div>
 
       <p class="text-center" style="margin-top:var(--space-xl);font-size:var(--text-sm);color:var(--text-muted)">All prices in CAD. 13% HST applied at booking. $150 surcharge for 400+ guests.</p>
@@ -195,7 +214,7 @@
         </div>
 
         <div class="card">
-          <h5>Album Guestbook</h5>
+          <h5>Personalized Photo Album Guestbook</h5>
           <p style="font-size:var(--text-sm);margin:var(--space-md) 0">A beautiful keepsake album where guests paste a print strip and write a personal message.</p>
           <div style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:700;color:var(--emerald)">$170</div>
         </div>
@@ -215,7 +234,7 @@
         <div class="card">
           <h5>Flower Wall</h5>
           <p style="font-size:var(--text-sm);margin:var(--space-md) 0">An elegant floral backdrop that adds a touch of romance and sophistication to every photo.</p>
-          <div style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:700;color:var(--emerald)">$350</div>
+          <div style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:700;color:var(--emerald)">from $300</div>
         </div>
       </div>
     </div>
