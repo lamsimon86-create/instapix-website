@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="#0B1F14"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#C5A96A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Camera -->
+  <g transform="translate(150,150)" fill="none" stroke="#C5A96A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-35 -15 L-35 25 A4 4 0 0 0 -31 29 L31 29 A4 4 0 0 0 35 25 L35 -15 A4 4 0 0 0 31 -19 L-31 -19 A4 4 0 0 0 -35 -15Z"/>
+    <path d="M-15 -19 L-11 -29 L11 -29 L15 -19"/>
+    <circle cx="0" cy="5" r="16"/>
+    <circle cx="0" cy="5" r="6"/>
+  </g>
+</svg>

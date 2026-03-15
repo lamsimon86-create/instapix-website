@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Date — Instapix Events | Toronto Photo Booth Rentals</title>
+  <meta name="description" content="Book your photo booth for your wedding, corporate event, or celebration. Fill out our quick form and we'll get back to you within 24 hours.">
+  <link rel="stylesheet" href="shared/brand.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .addon-check-label {
+      display: flex; align-items: center; gap: var(--space-sm);
+      font-size: var(--text-sm); color: var(--text-secondary);
+      cursor: pointer; padding: 10px 12px;
+      border: 1px solid var(--border); border-radius: var(--border-radius);
+      transition: all 0.2s;
+    }
+    .addon-check-label:hover { border-color: var(--emerald); background: rgba(11,31,20,0.02); }
+    .addon-check-label input[type="checkbox"] { accent-color: var(--emerald); width: 16px; height: 16px; cursor: pointer; }
+    @media (max-width: 640px) {
+      .addon-check-label { font-size: 13px; padding: 12px; min-height: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/White intapix text logo.png" alt="Instapix Events" style="width:160px;height:auto">
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu">
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="packages.html" class="nav__link">Packages</a>
+          <a href="gallery.html" class="nav__link">Gallery</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="blog.html" class="nav__link">Blog</a>
+          <a href="faq.html" class="nav__link">FAQ</a>
+        </div>
+        <a href="book.html" class="btn btn--primary nav__cta">Book Your Date</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding-top:calc(var(--nav-height) + var(--space-4xl));padding-bottom:var(--space-2xl);background:var(--cream)">
+    <div class="container text-center">
+      <span class="section-label">Let's Make It Happen</span>
+      <h1 style="font-size:var(--text-4xl)">Book Your Date</h1>
+      <p class="section-subtitle mx-auto" style="margin-top:var(--space-md)">Tell us about your event and we'll put together the perfect photo booth package for you. We typically respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section>
+    <div class="container" style="display:grid;grid-template-columns:2fr 1fr;gap:var(--space-4xl);align-items:start">
+
+      <!-- Form -->
+      <div class="fade-in">
+        <form id="booking-form">
+          <div class="grid grid--2">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name *</label>
+              <input class="form-input" type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number *</label>
+              <input class="form-input" type="tel" id="phone" name="phone" required placeholder="(647) 000-0000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="event_type">Event Type *</label>
+              <select class="form-select" id="event_type" name="event_type" required>
+                <option value="">Select event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="engagement">Engagement Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="graduation">Graduation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="form-group">
+              <label class="form-label" for="event_date">Event Date *</label>
+              <input class="form-input" type="date" id="event_date" name="event_date" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="guest_count">Estimated Guest Count</label>
+              <select class="form-select" id="guest_count" name="guest_count">
+                <option value="">Select range</option>
+                <option value="under-50">Under 50</option>
+                <option value="50-100">50 - 100</option>
+                <option value="100-200">100 - 200</option>
+                <option value="200-400">200 - 400</option>
+                <option value="400+">400+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="venue">Venue Name & Location</label>
+            <input class="form-input" type="text" id="venue" name="venue" placeholder="e.g. The Grand Luxe, Toronto">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="package">Package Interest</label>
+            <select class="form-select" id="package" name="package">
+              <option value="">Not sure yet</option>
+              <option value="digital">Digital — $375</option>
+              <option value="silver">Silver — $625</option>
+              <option value="gold">Gold — $750 (Most Popular)</option>
+              <option value="diamond">Diamond — $875</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="backdrop">Backdrop Preference</label>
+            <select class="form-select" id="backdrop" name="backdrop">
+              <option value="">Not sure yet</option>
+              <option value="Classic Black">Classic Black</option>
+              <option value="Classic White">Classic White</option>
+              <option value="Silver Sequin">Silver Sequin</option>
+              <option value="Champagne Sequin">Champagne Sequin</option>
+              <option value="Black Sequin">Black Sequin</option>
+              <option value="Marble">Marble</option>
+              <option value="Blush Flower Wall">Blush Flower Wall</option>
+              <option value="Silver Shimmer">Silver Shimmer</option>
+              <option value="Green Screen">Green Screen</option>
+              <option value="Custom (client provides)">Custom (I'll provide my own)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Interested in Add-Ons? <span style="font-weight:400;color:var(--text-muted)">(select all that apply)</span></label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-sm)">
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_keychains_a" value="Keychain Package A (100 keychains)"> Keychain Package A (100)
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_keychains_b" value="Keychain Package B (50 keychains)"> Keychain Package B (50)
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_album" value="Personalized Album Guest Book"> Album Guest Book
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_attendant" value="Booth Attendant (per hour)"> Booth Attendant
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_stanchion" value="Stanchion + Red Carpet Setup"> Stanchion + Red Carpet
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_glam" value="Kardashian Glam Booth Filter"> Glam Booth Filter
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_usb" value="USB Drive with All Photos"> USB Drive
+              </label>
+              <label class="addon-check-label">
+                <input type="checkbox" name="addon_backdrop" value="Custom Backdrop"> Custom Backdrop
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Anything Else We Should Know?</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your vision, any special requests, or questions you have..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="how_heard">How Did You Hear About Us?</label>
+            <select class="form-select" id="how_heard" name="how_heard">
+              <option value="">Select one</option>
+              <option value="instagram">Instagram</option>
+              <option value="google">Google Search</option>
+              <option value="facebook">Facebook</option>
+              <option value="tiktok">TikTok</option>
+              <option value="referral">Friend / Referral</option>
+              <option value="wedding-wire">Wedding Wire</option>
+              <option value="event-planner">Event Planner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Inquiry</button>
+          <p style="font-size:var(--text-xs);color:var(--text-muted);margin-top:var(--space-md);text-align:center">We'll respond within 24 hours. No commitment required.</p>
+        </form>
+      </div>
+
+      <!-- Sidebar Info -->
+      <div class="fade-in-right">
+        <div class="card" style="margin-bottom:var(--space-xl)">
+          <h5 style="margin-bottom:var(--space-lg)">Get In Touch</h5>
+          <div style="font-size:var(--text-sm);color:var(--text-secondary)">
+            <p style="margin-bottom:var(--space-md)">
+              <strong style="color:var(--text-primary);display:block;margin-bottom:var(--space-xs)">Phone</strong>
+              <a href="tel:+16479520738" style="color:var(--emerald)">(647) 952-0738</a>
+            </p>
+            <p style="margin-bottom:var(--space-md)">
+              <strong style="color:var(--text-primary);display:block;margin-bottom:var(--space-xs)">Email</strong>
+              <a href="mailto:hello@instapixevents.com" style="color:var(--emerald)">hello@instapixevents.com</a>
+            </p>
+            <p style="margin-bottom:var(--space-md)">
+              <strong style="color:var(--text-primary);display:block;margin-bottom:var(--space-xs)">Hours</strong>
+              Mon-Thu: 10 AM - 9 PM<br>
+              Fri-Sun: 9 AM - 9 PM
+            </p>
+            <p>
+              <strong style="color:var(--text-primary);display:block;margin-bottom:var(--space-xs)">Location</strong>
+              Toronto, ON<br>
+              Serving the entire GTA
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="background:var(--cream)">
+          <h5 style="margin-bottom:var(--space-md)">Quick FAQ</h5>
+          <div style="font-size:var(--text-sm);color:var(--text-secondary)">
+            <p style="margin-bottom:var(--space-md)">
+              <strong style="color:var(--text-primary)">How far in advance should I book?</strong><br>
+              We recommend booking 2-3 months ahead for weddings, and at least 3-4 weeks for other events.
+            </p>
+            <p style="margin-bottom:var(--space-md)">
+              <strong style="color:var(--text-primary)">Is a deposit required?</strong><br>
+              Yes, a 30% retainer secures your date. The balance is due 14 days before the event.
+            </p>
+            <p>
+              <strong style="color:var(--text-primary)">Do you travel outside the GTA?</strong><br>
+              Yes! We serve events across Southern Ontario. Additional travel fees may apply.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name" style="text-align:center"><img src="assets/INSTAPIX (Website).png" alt="Instapix Events" style="width:220px;height:auto;margin:0 auto 8px"></div>
+          <p class="footer__description">Premium photo booth rentals for weddings, corporate events, and celebrations across the Greater Toronto Area.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/instapixevents" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com/instapixevents" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://tiktok.com/@instapixevents" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="packages.html">Wedding Booths</a></li>
+            <li><a href="packages.html">Corporate Events</a></li>
+            <li><a href="packages.html">Birthday Parties</a></li>
+            <li><a href="packages.html">Engagements</a></li>
+            <li><a href="packages.html">Graduations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+16479520738">(647) 952-0738</a></li>
+            <li><a href="mailto:hello@instapixevents.com">hello@instapixevents.com</a></li>
+            <li>Toronto, ON</li>
+            <li style="margin-top:var(--space-md)"><a href="book.html" style="color:var(--gold)">Book Now &#8594;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Instapix Events. All rights reserved.</span>
+        <span>Serving Toronto, Mississauga, Brampton, Vaughan, Markham, Oakville, Hamilton & the GTA</span>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:var(--text-xs)">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.98.0"></script>
+  <script src="shared/helpers.js"></script>
+  <script>
+    const sb = window.supabase.createClient(
+      'https://iopvkxokniexbwxizkyd.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvcHZreG9rbmlleGJ3eGl6a3lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0MzMzMzAsImV4cCI6MjA4OTAwOTMzMH0.9LEycFWxKTqNuTccGzK9n2ClixUhgMuM82APQTT-TUg'
+    );
+
+    // Map guest count dropdown to a number
+    function parseGuestCount(val) {
+      const map = { 'under-50': 50, '50-100': 100, '100-200': 200, '200-400': 400, '400+': 500 };
+      return map[val] || null;
+    }
+
+    // Collect selected add-ons from checkboxes
+    function getSelectedAddons() {
+      const addons = [];
+      document.querySelectorAll('#booking-form input[name^="addon_"]:checked').forEach(cb => {
+        addons.push(cb.value);
+      });
+      return addons;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      IPX.initForm('#booking-form', async (data) => {
+        const selectedAddons = getSelectedAddons();
+
+        // 1. Create client
+        const { data: client, error: cErr } = await sb
+          .from('clients')
+          .insert({
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            event_type: data.event_type || null,
+            venue: data.venue || null,
+            referral_source: data.how_heard || 'website',
+            notes: data.message || null
+          })
+          .select('id')
+          .single();
+
+        if (cErr) { console.error('Client insert failed:', cErr); throw cErr; }
+
+        // Build notes with add-on/backdrop interests
+        let notesParts = [];
+        if (data.message) notesParts.push(data.message);
+        if (data.backdrop) notesParts.push('Backdrop interest: ' + data.backdrop);
+        if (selectedAddons.length) notesParts.push('Add-on interests: ' + selectedAddons.join(', '));
+
+        // 2. Create booking (inquiry)
+        const { error: bErr } = await sb
+          .from('bookings')
+          .insert({
+            client_id: client.id,
+            status: 'inquiry',
+            event_date: data.event_date || null,
+            venue_name: data.venue || null,
+            guest_count: parseGuestCount(data.guest_count),
+            package: data.package || null,
+            notes: notesParts.join('\n') || null
+          });
+
+        if (bErr) { console.error('Booking insert failed:', bErr); throw bErr; }
+
+        // 3. Create notification for the dashboard
+        await sb.from('notifications').insert({
+          type: 'inquiry',
+          message: 'New inquiry from ' + data.name + (data.event_type ? ' (' + data.event_type + ')' : ''),
+          link_url: 'bookings.html'
+        });
+
+        return true;
+      });
+    });
+  </script>
+  <script src="shared/chatbot.js"></script>
+</body>
+</html>

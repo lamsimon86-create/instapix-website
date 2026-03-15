@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Clock/duration icon -->
+  <g transform="translate(100,100)" fill="none" stroke="#C5A96A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r="40"/>
+    <line x1="0" y1="0" x2="0" y2="-22"/>
+    <line x1="0" y1="0" x2="16" y2="8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C5A96A"/>
+  </g>
+</svg>

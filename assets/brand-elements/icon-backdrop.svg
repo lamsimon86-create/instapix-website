@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Backdrop/curtain icon -->
+  <g transform="translate(100,100)" fill="none" stroke="#C5A96A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rod -->
+    <line x1="-45" y1="-45" x2="45" y2="-45"/>
+    <circle cx="-45" cy="-45" r="3" fill="#C5A96A"/>
+    <circle cx="45" cy="-45" r="3" fill="#C5A96A"/>
+    <!-- Curtain drapes -->
+    <path d="M-38 -45 Q-38 -20 -30 0 Q-22 20 -18 45"/>
+    <path d="M-18 -45 Q-18 -15 -10 10 Q-2 30 0 45"/>
+    <path d="M8 -45 Q8 -15 12 10 Q16 30 18 45"/>
+    <path d="M32 -45 Q32 -20 35 0 Q38 20 38 45"/>
+  </g>
+</svg>

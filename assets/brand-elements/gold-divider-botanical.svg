@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="60" viewBox="0 0 500 60">
+  <!-- Gold divider with botanical leaf accents -->
+  <line x1="60" y1="30" x2="200" y2="30" stroke="#C5A96A" stroke-width="1"/>
+  <line x1="300" y1="30" x2="440" y2="30" stroke="#C5A96A" stroke-width="1"/>
+  <!-- Center leaves -->
+  <g transform="translate(250,30)">
+    <path d="M0 -18 Q-8 -6 0 0 Q8 -6 0 -18Z" fill="none" stroke="#2D5A3D" stroke-width="1.2" opacity="0.7"/>
+    <path d="M0 18 Q-8 6 0 0 Q8 6 0 18Z" fill="none" stroke="#2D5A3D" stroke-width="1.2" opacity="0.7"/>
+    <path d="M-18 0 Q-6 -8 0 0 Q-6 8 -18 0Z" fill="none" stroke="#2D5A3D" stroke-width="1.2" opacity="0.7"/>
+    <path d="M18 0 Q6 -8 0 0 Q6 8 18 0Z" fill="none" stroke="#2D5A3D" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C5A96A"/>
+  </g>
+</svg>

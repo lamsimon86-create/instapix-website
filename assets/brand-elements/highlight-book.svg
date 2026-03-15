@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="#0B1F14"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#C5A96A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Calendar -->
+  <g transform="translate(150,150)" fill="none" stroke="#C5A96A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-28" y="-24" width="56" height="52" rx="4"/>
+    <line x1="-28" y1="-10" x2="28" y2="-10"/>
+    <line x1="-14" y1="-32" x2="-14" y2="-16"/>
+    <line x1="14" y1="-32" x2="14" y2="-16"/>
+    <circle cx="-10" cy="6" r="2" fill="#C5A96A"/>
+    <circle cx="10" cy="6" r="2" fill="#C5A96A"/>
+    <circle cx="-10" cy="18" r="2" fill="#C5A96A"/>
+    <circle cx="10" cy="18" r="2" fill="#C5A96A"/>
+  </g>
+</svg>

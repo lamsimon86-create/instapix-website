@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Props icon — glasses + mustache -->
+  <g transform="translate(100,95)" fill="none" stroke="#C5A96A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Glasses -->
+    <circle cx="-22" cy="-10" r="18"/>
+    <circle cx="22" cy="-10" r="18"/>
+    <path d="M-4 -10 Q0 -5 4 -10"/>
+    <line x1="-40" y1="-12" x2="-48" y2="-16"/>
+    <line x1="40" y1="-12" x2="48" y2="-16"/>
+    <!-- Mustache -->
+    <path d="M-25 22 Q-18 14 0 18 Q18 14 25 22 Q18 28 0 24 Q-18 28 -25 22Z" fill="#C5A96A" opacity="0.3" stroke="#C5A96A"/>
+  </g>
+</svg>

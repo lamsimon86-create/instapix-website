@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Guests/people icon -->
+  <g transform="translate(100,100)" fill="none" stroke="#C5A96A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Person 1 (center) -->
+    <circle cx="0" cy="-18" r="12"/>
+    <path d="M-22 30 A22 22 0 0 1 22 30"/>
+    <!-- Person 2 (left, smaller) -->
+    <circle cx="-32" cy="-12" r="9" opacity="0.6"/>
+    <path d="M-48 22 A16 16 0 0 1 -16 22" opacity="0.6"/>
+    <!-- Person 3 (right, smaller) -->
+    <circle cx="32" cy="-12" r="9" opacity="0.6"/>
+    <path d="M16 22 A16 16 0 0 1 48 22" opacity="0.6"/>
+  </g>
+</svg>

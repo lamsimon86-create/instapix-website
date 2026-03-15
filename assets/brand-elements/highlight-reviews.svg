@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="#0B1F14"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#C5A96A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Star -->
+  <g transform="translate(150,145)" fill="#C5A96A" stroke="none">
+    <polygon points="0,-30 7,-10 28,-10 11,4 18,24 0,12 -18,24 -11,4 -28,-10 -7,-10"/>
+  </g>
+</svg>

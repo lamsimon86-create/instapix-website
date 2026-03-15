@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="#0B1F14"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#C5A96A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Question mark -->
+  <g transform="translate(150,148)">
+    <text font-family="serif" font-size="72" font-weight="700" fill="#C5A96A" text-anchor="middle" dy="22">?</text>
+  </g>
+</svg>

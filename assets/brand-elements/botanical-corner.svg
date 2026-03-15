@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Botanical leaf corner accent — place in corners of posts/stories -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Main stem -->
+    <path d="M20 280 Q60 200 100 150 Q140 100 200 60 Q240 35 280 20" stroke="#2D5A3D" stroke-width="2" opacity="0.6"/>
+    <!-- Leaves along stem -->
+    <path d="M60 230 Q40 210 60 200 Q55 220 60 230Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <path d="M90 190 Q70 175 85 160 Q85 180 90 190Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <path d="M120 155 Q105 138 120 125 Q118 142 120 155Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <path d="M155 120 Q140 105 152 90 Q150 108 155 120Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <path d="M195 85 Q178 72 190 58 Q188 74 195 85Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <path d="M235 55 Q220 42 232 30 Q230 45 235 55Z" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.12"/>
+    <!-- Right-side leaves -->
+    <path d="M75 220 Q95 215 100 200" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.10"/>
+    <path d="M110 175 Q128 168 135 155" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.10"/>
+    <path d="M160 130 Q175 120 185 105" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.10"/>
+    <path d="M210 80 Q225 68 240 55" stroke="#2D5A3D" stroke-width="1" fill="#2D5A3D" opacity="0.10"/>
+    <!-- Gold accent dots -->
+    <circle cx="100" cy="150" r="2.5" fill="#C5A96A" opacity="0.5"/>
+    <circle cx="155" cy="108" r="2" fill="#C5A96A" opacity="0.4"/>
+    <circle cx="220" cy="55" r="1.5" fill="#C5A96A" opacity="0.35"/>
+  </g>
+</svg>

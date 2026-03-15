@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <!-- Testimonial/quote card frame on forest background -->
+  <rect width="1080" height="1080" fill="#0B1F14"/>
+  <!-- Subtle botanical pattern -->
+  <defs>
+    <pattern id="bg-botanical" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M40 10 Q30 25 40 40 Q50 25 40 10Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.06"/>
+      <path d="M40 40 Q30 55 40 70 Q50 55 40 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.06"/>
+      <path d="M10 40 Q25 30 40 40 Q25 50 10 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.06"/>
+      <path d="M40 40 Q55 30 70 40 Q55 50 40 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg-botanical)"/>
+  <!-- Gold corner brackets -->
+  <g fill="none" stroke="#C5A96A" stroke-width="2" stroke-linecap="round">
+    <path d="M100 200 L100 100 L200 100"/>
+    <path d="M880 100 L980 100 L980 200"/>
+    <path d="M100 880 L100 980 L200 980"/>
+    <path d="M880 980 L980 980 L980 880"/>
+  </g>
+  <!-- Large quotation mark -->
+  <text x="160" y="320" font-family="serif" font-size="180" fill="#C5A96A" opacity="0.15">"</text>
+  <!-- Divider line at bottom -->
+  <line x1="400" y1="800" x2="680" y2="800" stroke="#C5A96A" stroke-width="1" opacity="0.4"/>
+</svg>

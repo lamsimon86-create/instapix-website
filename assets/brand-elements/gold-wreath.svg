@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Gold botanical wreath — for logo lockup or feature callouts -->
+  <g transform="translate(200,200)" fill="none" stroke="#C5A96A" stroke-width="1.2" opacity="0.8">
+    <!-- Left side leaves -->
+    <path d="M-80 60 Q-100 30 -90 0 Q-80 -10 -70 0" />
+    <path d="M-70 0 Q-60 -30 -80 -60"/>
+    <path d="M-90 40 Q-110 20 -100 -5"/>
+    <path d="M-85 -20 Q-95 -45 -75 -70"/>
+    <!-- Leaf shapes left -->
+    <path d="M-90 30 Q-105 20 -90 10" />
+    <path d="M-85 0 Q-100 -8 -88 -18"/>
+    <path d="M-78 -35 Q-93 -42 -82 -55"/>
+    <!-- Right side leaves (mirrored) -->
+    <path d="M80 60 Q100 30 90 0 Q80 -10 70 0"/>
+    <path d="M70 0 Q60 -30 80 -60"/>
+    <path d="M90 40 Q110 20 100 -5"/>
+    <path d="M85 -20 Q95 -45 75 -70"/>
+    <!-- Leaf shapes right -->
+    <path d="M90 30 Q105 20 90 10"/>
+    <path d="M85 0 Q100 -8 88 -18"/>
+    <path d="M78 -35 Q93 -42 82 -55"/>
+    <!-- Bottom connection -->
+    <path d="M-60 70 Q-30 85 0 80 Q30 85 60 70"/>
+    <!-- Top connection -->
+    <path d="M-55 -75 Q-25 -90 0 -85 Q25 -90 55 -75"/>
+  </g>
+  <!-- Center gold dot -->
+  <circle cx="200" cy="200" r="3" fill="#C5A96A" opacity="0.6"/>
+</svg>

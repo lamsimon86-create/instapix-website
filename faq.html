@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Instapix Events | Toronto Photo Booth Rentals</title>
+  <meta name="description" content="Frequently asked questions about Instapix Events photo booth rentals — pricing, setup, what's included, and more.">
+  <link rel="stylesheet" href="shared/brand.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-md);
+      padding: var(--space-lg) 0; cursor: pointer; width: 100%; background: none; border: none;
+      font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 600;
+      color: var(--text-primary); text-align: left; transition: color 0.2s;
+    }
+    .faq-q:hover { color: var(--emerald); }
+    .faq-q-icon {
+      flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+      border: 1.5px solid var(--border); display: flex; align-items: center;
+      justify-content: center; font-size: 18px; color: var(--text-muted);
+      transition: all 0.3s; font-family: var(--font-body);
+    }
+    .faq-item.open .faq-q-icon { transform: rotate(45deg); color: var(--emerald); border-color: var(--emerald); }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+      font-size: var(--text-base); color: var(--text-secondary); line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 500px; padding-bottom: var(--space-lg); }
+    .faq-category {
+      font-family: var(--font-heading); font-size: var(--text-sm); font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--emerald);
+      margin-bottom: var(--space-md); padding-top: var(--space-xl);
+    }
+    .faq-category:first-child { padding-top: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/White intapix text logo.png" alt="Instapix Events" style="width:160px;height:auto">
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu">
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="packages.html" class="nav__link">Packages</a>
+          <a href="gallery.html" class="nav__link">Gallery</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="blog.html" class="nav__link">Blog</a>
+          <a href="faq.html" class="nav__link active">FAQ</a>
+        </div>
+        <a href="book.html" class="btn btn--primary nav__cta">Book Your Date</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding-top:calc(var(--nav-height) + var(--space-4xl));padding-bottom:var(--space-2xl);background:var(--cream)">
+    <div class="container text-center">
+      <span class="section-label">Questions & Answers</span>
+      <h1 style="font-size:var(--text-4xl)">Frequently Asked <em class="accent-text">Questions</em></h1>
+      <p class="section-subtitle mx-auto" style="margin-top:var(--space-md)">Everything you need to know about our photo booth services. Can't find what you're looking for? <a href="book.html" style="color:var(--emerald);font-weight:600">Get in touch</a>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Content -->
+  <section>
+    <div class="container" style="max-width:800px">
+
+      <!-- Booking & Pricing -->
+      <div class="faq-category">Booking & Pricing</div>
+      <div class="card" style="padding:0 var(--space-xl)">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What is the booking process like?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Simply complete the inquiry form on our <a href="book.html" style="color:var(--emerald);font-weight:600">Book Your Date</a> page and submit it. Once we receive your inquiry, we'll send you a detailed quote. A non-refundable retainer fee and signed contract are required to secure your date. Initial quotes expire in 10 days.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How much does it cost?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Our packages start at $375 + tax for Digital (2 hours), $625 + tax for Silver (2 hours), $750 + tax for Gold (3 hours), and $875 + tax for Diamond (4 hours). For events with 200+ guests, Silver, Gold, and Diamond packages are adjusted. An additional $150 surcharge applies for 400+ guest events. Visit our <a href="packages.html" style="color:var(--emerald);font-weight:600">Packages page</a> for full details.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is there a deposit required?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, a non-refundable 30% retainer fee is required to secure your reservation. This amount applies toward the total cost. The remaining balance is due before the event starts.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What payment methods do you accept?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We accept cash and e-transfers (preferred). Credit cards are also accepted with a 3% processing surcharge. We do not accept cheques.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I add extra hours?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Absolutely! Extra hours are $150/hour for Silver, Gold, and Diamond packages, or $100/hour for the Digital package. You can add extra time when booking or on the day of the event (subject to availability).</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can you book during holidays?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes! We're available on all holidays including Christmas, New Year's Eve, Canada Day, and more. An additional $150 holiday surcharge applies to all package pricing.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you accept last-minute bookings?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We generally don't accommodate bookings within the same week. We recommend at least 2 weeks advance notice. Same-week rush bookings may be possible and incur an additional $80 fee.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What is your cancellation policy?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Cancellations made 30+ days before the event: retainer is forfeited, no further payment required. 15-29 days before: 50% of the remaining balance is due. 0-14 days before: full payment is required. All cancellations must be submitted in writing.</div>
+        </div>
+
+      </div>
+
+      <!-- The Booth Experience -->
+      <div class="faq-category">The Booth Experience</div>
+      <div class="card" style="padding:0 var(--space-xl)">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What kind of equipment do you use?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Our setup includes an 18-megapixel Canon DSLR camera, Westcott Softbox studio lighting, a Microsoft Surface tablet running professional DSLR Booth software, and a dye-sublimation professional grade photo printer for instant, high-quality prints.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Will there be a booth attendant?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, all packages include 2 dedicated booth attendants who handle setup, run the booth during your event, assist guests, and manage teardown. You and your guests don't have to worry about a thing.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What backdrops are available?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We offer Sequin Gold, Sequin Silver, Sequin Rose Gold, Greenery Wall, Flower Wall, and Balloon Arch as standard backdrops. Diamond packages receive 20% off premium backdrops. You can also provide your own custom backdrop if you prefer.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Are props included?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes! Props are included with all packages. We bring a curated selection of fun, high-quality props to every event. Custom props can also be sourced at $50 per prop. All props are disinfected with Lysol after each event and stored in sealed containers.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I customize my own photo template?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes! After contract signing and deposit payment, our team designs a custom template including fonts and colors to match your event. You can suggest preferences and we'll refine it together. Template revisions are finalized 3 days before the event. Changes within 3 days may incur additional costs.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can photos be printed in black and white?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, we offer black and white printing with our professional studio lighting, which produces excellent B&W results. Just let us know your preference.</div>
+        </div>
+
+      </div>
+
+      <!-- Logistics -->
+      <div class="faq-category">Logistics & Setup</div>
+      <div class="card" style="padding:0 var(--space-xl)">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How much space do you need?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We require an 8 x 8 foot clearance for the booth, backdrop, and prop table. Ideally placed near the venue entrance or in a corner. We also need access to a standard 3-prong power outlet within 5 metres. If your venue has a tight space, let us know and we'll work out the best layout.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How long does setup take?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Our attendants arrive 30-60 minutes before the rental start time for setup and equipment calibration. Teardown takes about 30 minutes after the event ends. Setup and teardown times are not counted toward your booked hours.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What areas do you serve?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We serve the GTA and beyond, including Toronto, North York, Scarborough, Etobicoke, Markham, Woodbridge, Richmond Hill, Vaughan, Brampton, Mississauga, Milton, Georgetown, Oakville, Hamilton, and Orangeville. Travel surcharges may apply based on zone: Zone 1 (included), Zone 2 ($75), Zone 3 ($100), and outside zones ($100-$150+).</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you host outdoor events?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes! However, a tent or covered area is required to protect the equipment from overheating, wind, and potential damage. We'll need a flat, stable surface and access to power. If you're planning a fully outdoor setup, let us know so we can assess the space.</div>
+        </div>
+
+      </div>
+
+      <!-- Add-ons & Extras -->
+      <div class="faq-category">Add-ons & Extras</div>
+      <div class="card" style="padding:0 var(--space-xl)">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What add-ons do you offer?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">We offer a range of add-ons to enhance your experience: Personalized Album Guest Book ($170), Booth Attendant add-on ($100/hr), Idle Hours ($75/hr), Stanchion + Red Carpet Setup ($125), Custom Props ($50/prop), Kardashian Glam Booth Filter ($25), and USB Drive with All Photos ($75). You can select any of these when submitting your inquiry.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you offer keychains?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Yes! We offer keychain packages as an add-on: Package A includes 100 keychains ($399) and Package B includes 50 keychains ($200). These make amazing guest favors, especially for weddings. Extra keychains are $5 each.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How do guests get their digital photos?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">All packages include a private online gallery where guests can view and download their photos. Guests can also share directly from the booth via instant sharing and QR codes during the event. GIFs are also available with Silver and higher packages.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I get all the photos on a USB drive?
+            <span class="faq-q-icon">+</span>
+          </button>
+          <div class="faq-a">Absolutely. We offer a USB drive with all high-resolution photos as an add-on for $75. This is a great keepsake, especially for couples who want a physical backup of all their booth photos.</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section--cream">
+    <div class="container text-center">
+      <h2 class="section-title">Still Have Questions?</h2>
+      <p class="section-subtitle mx-auto" style="margin-bottom:var(--space-2xl)">We're happy to help. Reach out and we'll get back to you within 24 hours.</p>
+      <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap">
+        <a href="book.html" class="btn btn--primary btn--lg">Book Your Date</a>
+        <a href="mailto:hello@instapixevents.com" class="btn btn--secondary btn--lg">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name" style="text-align:center"><img src="assets/INSTAPIX (Website).png" alt="Instapix Events" style="width:220px;height:auto;margin:0 auto 8px"></div>
+          <p class="footer__description">Premium photo booth rentals for weddings, corporate events, and celebrations across the Greater Toronto Area.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/instapixevents" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://facebook.com/instapixevents" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://tiktok.com/@instapixevents" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="packages.html">Wedding Booths</a></li>
+            <li><a href="packages.html">Corporate Events</a></li>
+            <li><a href="packages.html">Birthday Parties</a></li>
+            <li><a href="packages.html">Engagements</a></li>
+            <li><a href="packages.html">Graduations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+16479520738">(647) 952-0738</a></li>
+            <li><a href="mailto:hello@instapixevents.com">hello@instapixevents.com</a></li>
+            <li>Toronto, ON</li>
+            <li style="margin-top:var(--space-md)"><a href="book.html" style="color:var(--gold)">Book Now &#8594;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Instapix Events. All rights reserved.</span>
+        <span>Serving Toronto, Mississauga, Brampton, Vaughan, Markham, Oakville, Hamilton & the GTA</span>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:var(--text-xs)">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/helpers.js"></script>
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      // Close all items in the same card
+      item.closest('.card').querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      // Toggle the clicked one
+      if (!wasOpen) item.classList.add('open');
+    }
+  </script>
+  <script src="shared/chatbot.js"></script>
+</body>
+</html>

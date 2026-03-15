@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Gold sparkle cluster — overlay on photos or next to text -->
+  <g fill="#C5A96A">
+    <!-- Main 4-point star -->
+    <path d="M100 60 Q102 90 130 100 Q102 110 100 140 Q98 110 70 100 Q98 90 100 60Z" opacity="0.9"/>
+    <!-- Small star top-right -->
+    <path d="M145 45 Q146 55 155 58 Q146 61 145 70 Q144 61 135 58 Q144 55 145 45Z" opacity="0.7"/>
+    <!-- Small star bottom-left -->
+    <path d="M55 120 Q56 128 63 130 Q56 132 55 140 Q54 132 47 130 Q54 128 55 120Z" opacity="0.6"/>
+    <!-- Tiny dot -->
+    <circle cx="160" cy="80" r="2.5" opacity="0.5"/>
+    <circle cx="50" cy="75" r="2" opacity="0.4"/>
+    <circle cx="130" cy="145" r="1.5" opacity="0.35"/>
+  </g>
+</svg>

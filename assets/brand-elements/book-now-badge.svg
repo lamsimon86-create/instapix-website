@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Circular "Book Now" badge/stamp -->
+  <circle cx="100" cy="100" r="90" fill="#2D5A3D"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#C5A96A" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.5"/>
+  <text x="100" y="92" font-family="serif" font-size="22" font-weight="700" fill="#C5A96A" text-anchor="middle" letter-spacing="3">BOOK</text>
+  <text x="100" y="118" font-family="serif" font-size="22" font-weight="700" fill="#C5A96A" text-anchor="middle" letter-spacing="3">NOW</text>
+  <!-- Small decorative dots -->
+  <circle cx="60" cy="100" r="2" fill="#C5A96A" opacity="0.6"/>
+  <circle cx="140" cy="100" r="2" fill="#C5A96A" opacity="0.6"/>
+</svg>

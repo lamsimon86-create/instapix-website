@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#0B1F14"/>
+  <defs>
+    <pattern id="gold-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="rgba(197,169,106,0.08)" stroke-width="1"/>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="rgba(197,169,106,0.08)" stroke-width="1"/>
+    </pattern>
+    <pattern id="botanical" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M40 10 Q30 25 40 40 Q50 25 40 10Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.12"/>
+      <path d="M40 40 Q30 55 40 70 Q50 55 40 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.12"/>
+      <path d="M10 40 Q25 30 40 40 Q25 50 10 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.12"/>
+      <path d="M40 40 Q55 30 70 40 Q55 50 40 40Z" fill="none" stroke="#C5A96A" stroke-width="0.5" opacity="0.12"/>
+      <circle cx="40" cy="40" r="1.5" fill="#C5A96A" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#gold-grid)"/>
+  <rect width="1080" height="1080" fill="url(#botanical)"/>
+</svg>

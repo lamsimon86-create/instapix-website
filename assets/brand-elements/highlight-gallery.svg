@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="#0B1F14"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#C5A96A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Grid/gallery -->
+  <g transform="translate(150,150)" fill="none" stroke="#C5A96A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-30" y="-30" width="25" height="25" rx="3"/>
+    <rect x="5" y="-30" width="25" height="25" rx="3"/>
+    <rect x="-30" y="5" width="25" height="25" rx="3"/>
+    <rect x="5" y="5" width="25" height="25" rx="3"/>
+  </g>
+</svg>

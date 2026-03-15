@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="40" viewBox="0 0 400 40">
+  <!-- Elegant gold divider with center diamond -->
+  <line x1="40" y1="20" x2="175" y2="20" stroke="#C5A96A" stroke-width="1"/>
+  <rect x="188" y="8" width="24" height="24" rx="2" transform="rotate(45 200 20)" fill="none" stroke="#C5A96A" stroke-width="1.5"/>
+  <circle cx="200" cy="20" r="3" fill="#C5A96A"/>
+  <line x1="225" y1="20" x2="360" y2="20" stroke="#C5A96A" stroke-width="1"/>
+</svg>
