@@ -322,13 +322,13 @@
         saveMessages(messages);
         appendBubble('assistant', data.text);
       } else if (data.error) {
-        appendBubble('assistant', "Sorry, I'm having a little trouble right now. Feel free to call us at (647) 952-0738 or email hello@instapixevents.com!");
+        appendBubble('assistant', "Sorry, I'm having a little trouble right now. Feel free to call us at (647) 952-0738 or email instapixevents@gmail.com!");
       }
     } catch (err) {
       hideTyping();
       const msg = err.name === 'AbortError'
-        ? "That's taking longer than expected. You can reach us directly at (647) 952-0738 or hello@instapixevents.com!"
-        : "Oops, something went wrong. You can reach us directly at (647) 952-0738 or hello@instapixevents.com!";
+        ? "That's taking longer than expected. You can reach us directly at (647) 952-0738 or instapixevents@gmail.com!"
+        : "Oops, something went wrong. You can reach us directly at (647) 952-0738 or instapixevents@gmail.com!";
       appendBubble('assistant', msg);
     }
 

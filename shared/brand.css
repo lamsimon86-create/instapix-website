@@ -739,6 +739,10 @@ section {
   object-fit: cover;
 }
 
+.hero__bg-img {
+  object-position: 55% 35%;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -853,6 +857,10 @@ section {
   .hero {
     min-height: 100vh;
     padding-top: calc(var(--nav-height) + var(--space-xl));
+  }
+
+  .hero__bg-img {
+    object-position: 72% 35%;
   }
 
   .hero__title {
