@@ -304,7 +304,7 @@
 
       const res = await fetch(FUNCTION_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-session-id': getSessionId() },
         signal: controller.signal,
         body: JSON.stringify({
           messages: messages.map(m => ({ role: m.role, content: m.content })),
