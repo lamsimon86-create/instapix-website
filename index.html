@@ -156,6 +156,34 @@
       .photo-lightbox__next { right: 6px; }
       .photo-lightbox__nav { width: 40px; height: 40px; font-size: 24px; }
     }
+
+    /* Brand marquee */
+    .brand-marquee-wrap {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+    .brand-marquee {
+      display: flex;
+      gap: var(--space-3xl);
+      width: max-content;
+      animation: brandScroll 40s linear infinite;
+    }
+    .brand-marquee:hover { animation-play-state: paused; }
+    .brand-marquee img {
+      flex-shrink: 0;
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.5;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.3s, filter 0.3s;
+    }
+    .brand-marquee img:hover { opacity: 1; filter: brightness(0) invert(1); }
+    @keyframes brandScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
   </style>
 </head>
 <body>
@@ -231,6 +259,52 @@
       <div class="hero__scroll-dot"></div>
     </div>
   </section>
+
+  <!-- Trusted Brands Marquee -->
+  <section style="padding:var(--space-3xl) 0; background:var(--forest); overflow:hidden;">
+    <div class="container text-center" style="margin-bottom:var(--space-xl);">
+      <span class="section-label" style="color:var(--gold);">Trusted By</span>
+      <h2 class="section-title" style="color:#fff; font-size:var(--text-2xl);">Brands & Organizations We've Worked With</h2>
+    </div>
+    <div class="brand-marquee-wrap">
+      <div class="brand-marquee">
+        <img src="assets/logos/BVLGARI.png" alt="Bvlgari Roma" loading="lazy">
+        <img src="assets/logos/EFTours.png" alt="EF Tours" loading="lazy">
+        <img src="assets/logos/ENDY.png" alt="Endy" loading="lazy">
+        <img src="assets/logos/Hush.png" alt="Hush" loading="lazy">
+        <img src="assets/logos/Netapp.png" alt="NetApp" loading="lazy">
+        <img src="assets/logos/Pears.png" alt="Pears Restaurant" loading="lazy">
+        <img src="assets/logos/SherwayGardens.png" alt="Sherway Gardens" loading="lazy">
+        <img src="assets/logos/SMBC.png" alt="SMBC" loading="lazy">
+        <img src="assets/logos/Theguildinn.png" alt="The Guild Inn" loading="lazy">
+        <img src="assets/logos/WedwithTina.png" alt="Wed with Tina" loading="lazy">
+        <img src="assets/logos/browista.png" alt="Browista Championship" loading="lazy">
+        <img src="assets/logos/buddhabomb.png" alt="Buudabomb Cafe" loading="lazy">
+        <img src="assets/logos/dreamworks.png" alt="DreamWorks" loading="lazy">
+        <img src="assets/logos/Patron.png" alt="Patron" loading="lazy">
+        <img src="assets/logos/peninsula.png" alt="Peninsula Canada" loading="lazy">
+        <img src="assets/logos/tenspot.png" alt="The Ten Spot" loading="lazy">
+        <!-- duplicate set for seamless loop -->
+        <img src="assets/logos/BVLGARI.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/EFTours.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/ENDY.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/Hush.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/Netapp.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/Pears.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/SherwayGardens.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/SMBC.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/Theguildinn.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/WedwithTina.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/browista.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/buddhabomb.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/dreamworks.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/Patron.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/peninsula.png" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/tenspot.png" alt="" aria-hidden="true" loading="lazy">
+      </div>
+    </div>
+  </section>
+
   <!-- What We Offer -->
   <section class="section--cream">
     <div class="container text-center">
