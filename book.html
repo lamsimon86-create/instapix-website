@@ -134,7 +134,7 @@
               <option value="digital">Digital - $375</option>
               <option value="silver">Silver - $625</option>
               <option value="gold">Gold - $750 (Most Popular)</option>
-              <option value="diamond">Diamond - $875</option>
+              <option value="diamond">Diamond - $999</option>
             </select>
           </div>
 
@@ -328,7 +328,7 @@
 
     // Calculate package price based on selection and guest count
     function getPackagePrice(pkg, guestCount) {
-      const basePrices = { digital: 375, silver: 625, gold: 750, diamond: 875 };
+      const basePrices = { digital: 375, silver: 625, gold: 750, diamond: 999 };
       if (!pkg || !basePrices[pkg]) return 0;
       let price = basePrices[pkg];
       // Guest count adjustments (200+ guests)
