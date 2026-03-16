@@ -15,6 +15,7 @@
   <meta property="og:locale" content="en_CA">
   <meta property="og:site_name" content="Instapix Events">
 
+  <link rel="canonical" href="https://instapixevents.com/book">
   <link rel="stylesheet" href="shared/brand.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <style>
@@ -49,7 +50,7 @@
           <a href="packages.html" class="nav__link">Packages</a>
           <a href="gallery.html" class="nav__link">Gallery</a>
           <a href="about.html" class="nav__link">About</a>
-          <a href="blog.html" class="nav__link">Blog</a>
+
           <a href="faq.html" class="nav__link">FAQ</a>
         </div>
         <a href="book.html" class="btn btn--primary nav__cta">Book Your Date</a>
@@ -172,9 +173,6 @@
                 <input type="checkbox" name="addon_glam" value="Kardashian Glam Booth Filter"> Glam Booth Filter — $25
               </label>
               <label class="addon-check-label">
-                <input type="checkbox" name="addon_usb" value="USB Drive with All Photos"> USB Drive — $25
-              </label>
-              <label class="addon-check-label">
                 <input type="checkbox" name="addon_backdrop" value="Custom Backdrop"> Custom Backdrop — from $250
               </label>
               <label class="addon-check-label">
@@ -282,7 +280,7 @@
             <li><a href="packages.html">Packages</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
+
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
@@ -416,6 +414,31 @@
           message: 'New inquiry from ' + data.name + (data.event_type ? ' (' + data.event_type + ')' : ''),
           link_url: 'bookings.html'
         });
+
+        // 4. Send email notification to admin
+        try {
+          await sb.functions.invoke('send-email', {
+            body: {
+              type: 'inquiry_notification',
+              to: 'instapixevents@gmail.com',
+              data: {
+                name: data.name,
+                email: data.email,
+                phone: data.phone,
+                event_type: data.event_type || null,
+                event_date: data.event_date || null,
+                venue: data.venue || null,
+                guest_count: data.guest_count || null,
+                package: data.package || null,
+                backdrop: data.backdrop || null,
+                addons: selectedAddons.length ? selectedAddons.join(', ') : null,
+                message: data.message || null,
+              }
+            }
+          });
+        } catch (emailErr) {
+          console.warn('Email notification failed (non-blocking):', emailErr);
+        }
 
         return true;
       });
