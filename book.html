@@ -328,6 +328,34 @@
       return map[val] || null;
     }
 
+    // Calculate package price based on selection and guest count
+    function getPackagePrice(pkg, guestCount) {
+      const basePrices = { digital: 375, silver: 625, gold: 750, diamond: 875 };
+      if (!pkg || !basePrices[pkg]) return 0;
+      let price = basePrices[pkg];
+      // Guest count adjustments (200+ guests)
+      if (guestCount >= 200 && guestCount < 400) {
+        if (pkg === 'silver') price = 750;
+        if (pkg === 'gold') price = 875;
+        if (pkg === 'diamond') price = 1000;
+      }
+      // 400+ guest surcharge
+      if (guestCount >= 400) {
+        if (pkg === 'silver') price = 750;
+        if (pkg === 'gold') price = 875;
+        if (pkg === 'diamond') price = 1000;
+        price += 150;
+      }
+      // Add HST
+      return Math.round(price * 1.13 * 100) / 100;
+    }
+
+    // Format package name for display
+    function formatPackageName(pkg) {
+      if (!pkg) return null;
+      return pkg.charAt(0).toUpperCase() + pkg.slice(1);
+    }
+
     // Collect selected add-ons from checkboxes
     function getSelectedAddons() {
       const addons = [];
@@ -340,6 +368,8 @@
     document.addEventListener('DOMContentLoaded', () => {
       IPX.initForm('#booking-form', async (data) => {
         const selectedAddons = getSelectedAddons();
+        const guestCount = parseGuestCount(data.guest_count);
+        const pkgAmount = getPackagePrice(data.package, guestCount || 100);
 
         // 1. Create client
         const { data: client, error: cErr } = await sb
@@ -372,8 +402,10 @@
             status: 'inquiry',
             event_date: data.event_date || null,
             venue_name: data.venue || null,
-            guest_count: parseGuestCount(data.guest_count),
+            guest_count: guestCount,
             package: data.package || null,
+            package_name: formatPackageName(data.package),
+            amount: pkgAmount || null,
             notes: notesParts.join('\n') || null
           });
 
